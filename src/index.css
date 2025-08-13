@@ -1,0 +1,48 @@
+:root{
+  --bs-primary: #0d6efd;
+  --accent: #6610f2;
+  --muted: #6c757d;
+  --card-radius: 1rem;
+}
+html,body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+html { scroll-behavior: smooth; }
+body{background:#f8fafc; color:#0b1220}
+.navbar-brand strong{letter-spacing:0.4px}
+.hero{
+  padding:4.5rem 0;
+  background: linear-gradient(180deg, rgba(13,110,253,0.06) 0%, rgba(102,16,242,0.02) 100%);
+  border-bottom: 1px solid rgba(13,110,253,0.05);
+}
+.profile-img{width:250px;height:250px;object-fit:cover;border-radius:50%;box-shadow:0 8px 30px rgba(13,110,253,0.08)}
+.skill-badge{font-size:.8rem;padding:.25rem .5rem;border-radius:.5rem}
+.project-card{border-radius:var(--card-radius);overflow:hidden}
+.project-image{height:180px;object-fit:cover}
+.timeline-item{padding:.75rem 1rem;border-radius:.75rem;background:#fff;margin-bottom:.75rem;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+footer{padding:2.25rem 0;background:#fff;margin-top:3rem}
+.btn-ghost{background:transparent;border:1px solid rgba(13,110,253,0.08)}
+@media(min-width:992px){.hero{padding:6rem 0}}
+
+/* --- Skills custom styles --- */
+.skill-card {
+  transition: box-shadow .25s ease, border-color .25s ease;
+  cursor: default;
+  outline: none;
+}
+.skill-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-color: var(--bs-primary);
+}
+.skill-card:focus-within {
+  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+  border-color: var(--bs-primary);
+  outline: 3px solid rgba(13,110,253,0.08);
+}
+.skill-icon {
+  max-height: 60px;
+  transition: transform 0.28s ease, filter 0.28s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.12));
+}
+.skill-card:hover .skill-icon,
+.skill-card:focus-within .skill-icon {
+  transform: scale(1.12);
+}
