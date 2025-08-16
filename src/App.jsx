@@ -18,9 +18,9 @@ function Projects() {
     },
     {
       title: "My Portfolio",
-      description: "This portfolio built with Vite + React + Bootstrap + AOS.",
-      image: "/assets/project3.jpg",
-      link: "https://github.com/yourusername/myportfolio"
+      description: "Frontend Portfolio",
+      image: "/assets/project3.png",
+      link: "https://github.com/siddusid73/forntend-project-sample.git"
     }
   ];
 
